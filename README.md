@@ -1,6 +1,6 @@
 # Reddit Chat
 
-![Logo](https://media.discordapp.net/attachments/444699521398865943/482791940035969024/reddit-chat-js-logo.png)
+![Logo](https://media.discordapp.net/attachments/444699521398865943/482794739611992064/reddit-chat-js-logo-256px.png)
 
 This library is in ALPHA and is prone to breaking or feature changes. It will remain in alpha until reddit chat leaves alpha.
 
