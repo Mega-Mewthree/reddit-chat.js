@@ -19,6 +19,8 @@ client.on("message", message => {
   const command = args.shift();
   if (command === "say") {
     message.channel.sendMessage(args.join(" ")).catch(console.error);
+  } else if (command === "flipcoin") {
+    message.channel.sendMessage(Math.random() > 0.5 ? "Heads" : "Tails");
   }
 });
 
