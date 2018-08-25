@@ -8,6 +8,8 @@ This library is in ALPHA and is prone to breaking or feature changes. It will re
 
 This is still in development.
 
+Support: https://discord.gg/WPRbdTr.
+
 Documentation: https://github.com/Mega-Mewthree/reddit-chat.js/tree/master/docs/structs.
 
 Use at your own risk.
