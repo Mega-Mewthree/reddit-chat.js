@@ -1,6 +1,6 @@
 {
   "name": "reddit-chat.js",
-  "version": "0.1.0-alpha",
+  "version": "0.1.1-alpha",
   "description": "A Node.js library for accessing the reddit chat API.",
   "main": "src/index.js",
   "scripts": {
@@ -13,10 +13,10 @@
   "author": "mega-mewthree <nebuladevs@gmail.com> (https://github.com/Mega-Mewthree)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mega_Mewthree/reddit-chat.js.git"
+    "url": "https://github.com/Mega-Mewthree/reddit-chat.js.git"
   },
-  "homepage": "https://github.com/Mega_Mewthree/reddit-chat.js",
-  "bugs": "https://github.com/Mega_Mewthree/reddit-chat.js/issues",
+  "homepage": "https://github.com/Mega-Mewthree/reddit-chat.js",
+  "bugs": "https://github.com/Mega-Mewthree/reddit-chat.js/issues",
   "license": "MIT",
   "keywords": [
     "reddit",
