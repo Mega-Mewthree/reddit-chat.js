@@ -5,6 +5,10 @@
   <br>
   <div>
     <a href="https://www.npmjs.com/package/reddit-chat.js"><img src="https://img.shields.io/npm/dt/reddit-chat.js.svg" alt="npm"></a>
+    <a href="https://www.npmjs.com/package/reddit-chat.js"><img src="https://img.shields.io/npm/v/reddit-chat.js.svg" alt="version"></a>
+    <a href="https://travis-ci.org/Mega-Mewthree/reddit-chat.js"><img src="https://img.shields.io/travis/Mega-Mewthree/reddit-chat.js.svg" alt="travis-ci"></a>
+    <a href="https://github.com/Mega-Mewthree/reddit-chat.js/issues"><img src="https://img.shields.io/github/issues-raw/Mega-Mewthree/reddit-chat.js.svg" alt="open-issues"></a>
+    <a href="https://github.com/Mega-Mewthree/reddit-chat.js/pulls"><img src="https://img.shields.io/github/issues-pr-raw/Mega-Mewthree/reddit-chat.js.svg" alt="open-pull-requests"></a>
   </div>
   <br>
   <div>
