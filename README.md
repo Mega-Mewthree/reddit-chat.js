@@ -1,14 +1,14 @@
 <div align="center">
   <div>
-    ![Logo](https://media.discordapp.net/attachments/444699521398865943/482794739611992064/reddit-chat-js-logo-256px.png)
+    <img src="https://media.discordapp.net/attachments/444699521398865943/482794739611992064/reddit-chat-js-logo-256px.png" alt="Logo">
   </div>
   <br>
   <div>
-    [![npm](https://img.shields.io/npm/dt/reddit-chat.js.svg)](https://www.npmjs.com/package/reddit-chat.js)
+    <a href="https://www.npmjs.com/package/reddit-chat.js"><img src="https://img.shields.io/npm/dt/reddit-chat.js.svg" alt="npm"></a>
   </div>
   <br>
   <div>
-    [![NPM](https://nodei.co/npm/reddit-chat.js.png)](https://nodei.co/npm/reddit-chat.js/)
+    <a href="https://nodei.co/npm/reddit-chat.js/"><img src="https://nodei.co/npm/reddit-chat.js.png" alt="npm"></a>
   </div>
 </div>
 
