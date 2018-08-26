@@ -19,7 +19,7 @@ const util = {
     return array.filter(item => seen.hasOwnProperty(item) ? false : (seen[item] = true));
   },
   wait(ms = 0) {
-    return new Promise((resolve, reject) => {
+    return new Promise(resolve => {
       setTimeout(() => {
         resolve();
       }, ms);

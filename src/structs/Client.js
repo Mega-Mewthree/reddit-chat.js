@@ -132,7 +132,10 @@ class Client extends EventEmitter {
       this.emit("channelUpdate", channel);
     };
     handler.onChannelDeleted = (url, type) => {
-      channel = new PartialChannel({url, type});
+      channel = new PartialChannel({
+        url,
+        type
+      });
       this.emit("channelDelete", channel);
     };
     handler.onChannelFrozen = channel => {

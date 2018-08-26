@@ -22,7 +22,7 @@ class ChannelMember {
    * @returns {Promise} Resolves if successful.
    */
   kick(seconds = 3600) {
-    return new Promise(async (resolve, reject) => {
+    return new Promise((resolve, reject) => {
       this.channel._sendbirdObject.banUserWithUserId(this.user.id, seconds, (_, error) => {
         if (error) return reject(error);
         resolve();
@@ -35,7 +35,7 @@ class ChannelMember {
    * @returns {Promise} Resolves if successful.
    */
   ban() {
-    return new Promise(async (resolve, reject) => {
+    return new Promise((resolve, reject) => {
       this.channel._sendbirdObject.banUserWithUserId(this.user.id, (_, error) => {
         if (error) return reject(error);
         resolve();

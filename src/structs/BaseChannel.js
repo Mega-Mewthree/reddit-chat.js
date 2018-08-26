@@ -232,7 +232,7 @@ class BaseChannel {
     if (user instanceof ChannelMember) {
       return user.kick(seconds);
     }
-    return new Promise(async (resolve, reject) => {
+    return new Promise((resolve, reject) => {
       if (!user) return reject(new TypeError("Not a valid user."));
       if (user instanceof User || user instanceof ClientUser) {
         this._sendbirdObject.banUserWithUserId(user.id, seconds, (_, error) => {
@@ -259,7 +259,7 @@ class BaseChannel {
     if (user instanceof ChannelMember) {
       return user.ban();
     }
-    return new Promise(async (resolve, reject) => {
+    return new Promise((resolve, reject) => {
       if (!user) return reject(new TypeError("Not a valid user."));
       if (user instanceof User || user instanceof ClientUser) {
         this._sendbirdObject.banUserWithUserId(user.id, (_, error) => {
