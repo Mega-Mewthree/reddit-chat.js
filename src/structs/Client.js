@@ -70,6 +70,7 @@ class Client extends EventEmitter {
   /**
    * Creates the event emitters.
    * @private
+   * @returns {void}
    */
   createChannelEventEmitters() {
     const handler = this._sendbirdChannelHandler;
@@ -132,7 +133,7 @@ class Client extends EventEmitter {
       this.emit("channelUpdate", channel);
     };
     handler.onChannelDeleted = (url, type) => {
-      channel = new PartialChannel({
+      const channel = new PartialChannel({
         url,
         type
       });

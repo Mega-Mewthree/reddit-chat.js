@@ -108,7 +108,7 @@ class BaseChannel {
    * @readonly
    */
   get invitationPending() {
-    return this._sendbirdObject.myMemberState === "invited" ? true : false;
+    return this._sendbirdObject.myMemberState === "invited";
   }
 
   /**
@@ -126,7 +126,7 @@ class BaseChannel {
    * @readonly
    */
   get inChannel() {
-    return this._sendbirdObject.myMemberState === "joined" ? true : false;
+    return this._sendbirdObject.myMemberState === "joined";
   }
 
   /**
@@ -188,6 +188,7 @@ class BaseChannel {
 
   /**
    * Starts the typing indicator. Lasts for a few seconds.
+   * @returns {void}
    */
   startTyping() {
     this._sendbirdObject.startTyping();
@@ -195,6 +196,7 @@ class BaseChannel {
 
   /**
    * Stops the typing indicator.
+   * @returns {void}
    */
   stopTyping() {
     this._sendbirdObject.endTyping();
@@ -279,13 +281,13 @@ class BaseChannel {
 
   /**
    * Invites users to the channel.
-   * @param {Array<User|ChannelMember>} user - The user to kick.
+   * @param {Array<User|ChannelMember>} users - The users to kick.
    * @returns {Promise} Resolves if successful.
    */
   inviteUsers(users = []) {
-    return new Promise(async (resolve, reject) => {
+    return new Promise((resolve, reject) => {
       users = users.map(u => {
-        if (u instanceof ChannelMember || u instanceof User || user instanceof ClientUser) return u.id;
+        if (u instanceof ChannelMember || u instanceof User || u instanceof ClientUser) return u.id;
         if (typeof u !== "string") return reject(new TypeError("Not a valid user."));
         return u;
       });
@@ -301,7 +303,7 @@ class BaseChannel {
    * @returns {Promise} Resolves if successful.
    */
   leave() {
-    return new Promise(async (resolve, reject) => {
+    return new Promise((resolve, reject) => {
       this._sendbirdObject.leave((_, error) => {
         if (error) return reject(error);
         resolve();
