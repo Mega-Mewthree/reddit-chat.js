@@ -4,7 +4,6 @@
   "description": "A Node.js library for accessing the reddit chat API.",
   "main": "src/index.js",
   "scripts": {
-    "test": "npm run lint",
     "docs": "node scripts/makedocs.js",
     "lint": "eslint src/**/*.js"
   },
@@ -32,6 +31,7 @@
     "node": ">=8.0.0 <9.0.0"
   },
   "devDependencies": {
-    "jsdoc-to-markdown": "^4.0.1"
+    "jsdoc-to-markdown": "^4.0.1",
+    "eslint": "^5.5.0"
   }
 }
